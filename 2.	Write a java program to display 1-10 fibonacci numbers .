@@ -1,0 +1,19 @@
+package homework;
+ 
+ public class Fibonacci {
+ 	    public static void main(String[] args) {
+ 	        int n = 10; // number of Fibonacci numbers to display
+ 	        int first = 0, second = 1;
+ 
+ 	        System.out.println("First " + n + " Fibonacci numbers:");
+ 
+ 	        for (int i = 1; i <= n; i++) {
+ 	            System.out.print(first + " ");
+ 
+ 	            // calculate next number
+ 	            int next = first + second;
+ 	            first = second;
+ 	            second = next;
+ 	        }
+ 	    }
+ 	}
