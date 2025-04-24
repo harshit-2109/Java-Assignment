@@ -1,0 +1,31 @@
+package homework;
+
+import java.util.Scanner;
+
+public class TwoSub {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter marks1 of the first subject:");
+		int marks1 = sc.nextInt();
+		
+		System.out.println("Enter marks2 of the second subject:");
+		int marks2 = sc.nextInt();
+		
+		if(marks1>=35 && marks2>=35) {
+			System.out.println("The candidate is pass in both subject");
+			
+		}
+		else {
+			if(marks1 < 35) {
+				System.out.println("The candidate is fail in subject1");
+		}
+			if(marks2 < 35) {
+				System.out.println("The candidate is fail in subject2");
+
+				
+			}
+		}
+	}
+
+}
